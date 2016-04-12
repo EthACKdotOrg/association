@@ -10,8 +10,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{libertine}
-
-
+\usepackage{enumitem}
 
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
@@ -19,14 +18,16 @@
 \usepackage{hyperref}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
- \fancypagestyle{plain}{%
+\fancypagestyle{plain}{%
  \fancyhf{}%
- \fancyfoot[L]{The Swiss Privacy Basecamp}
+ \fancyfoot{}%
+ \fancyfoot[L]{The Swiss Privacy Basecamp}%
  \fancyfoot[C]{\thepage/\pageref*{LastPage}}%
  \fancyfoot[R]{EthACK.org — Statuts}%
  \renewcommand{\headrulewidth}{0pt}%
  \renewcommand{\footrulewidth}{0pt}%
- }
+}
+
 
 \author{EthACK.org — The Swiss Privacy Basecamp}
 \title{Statuts de l'Association}
@@ -36,9 +37,14 @@
 	linkcolor=black,
 	urlcolor=blue
 }
+\renewcommand{\theenumi}{\up{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\theenumi}
+
+
 \begin{document}
 \begin{titlepage}
 \centering
+\vspace{1cm}
 \includegraphics[width=0.50\textwidth]{../logo-4096.png}\par\vspace{2cm}
 {\scshape\LARGE EthACK.org \par}
 \vspace{1cm}
@@ -47,42 +53,48 @@
 {\huge\bfseries Statuts de l'Association\par}
 
 \vfill
-{\large \today\par}
 \end{titlepage}
 
 \tableofcontents
+\newpage
+
 
 \setlength{\parindent}{0cm}
 
-\chapter*{Dénomination et Siège}
+\section*{Dénomination et Siège}
 \addcontentsline{toc}{chapter}{Dénomination et Siège}
 
-\section*{Article 1}
-EthACK.org est une Association sans but lucratif régie par les présents statuts et subsidiairement par les articles 60 et suivants du Code civil suisse\footnote{\url{http://www.admin.ch/ch/f/rs/210/index1.html}}. Elle est politiquement neutre et confessionnellement indépendante.
+\subsection*{Article 1}
+\begin{enumerate}
+\item EthACK.org est une Association sans but lucratif régie par les présents statuts et subsidiairement par les articles 60 et suivants du Code civil suisse\footnote{\url{http://www.admin.ch/ch/f/rs/210/index1.html}}. Elle est politiquement neutre et confessionnellement indépendante.
+\end{enumerate}
 
-\section*{Article 2}
-Le siège de l’Association est situé à l’adresse du président.
+\subsection*{Article 2}
+\begin{enumerate}
+\item Le siège de l’Association est situé à Vevey (Suisse).
+\end{enumerate}
 
-\chapter*{Buts}
+\section*{Buts}
 \addcontentsline{toc}{chapter}{Buts}
 
-\section*{Article 3}
-L’Association poursuit les buts suivants :
+\subsection*{Article 3}
+\begin{enumerate}
+\item L’Association poursuit les buts suivants :
 \begin{itemize}
 \item informer le public de leurs "droits numériques" via, par exemple, des articles en ligne, dans la presse ou des conférences ;
-\item informer le public des possibles atteintes par des privés ou un état à ces droits via les mêmes moyens ;
+\item informer le public des possibles atteintes par des personnes privées ou des organes publics à ces droits via les mêmes moyens ;
 \item promouvoir les outils servant à protéger sa sphère privée ;
 \item former et sensibiliser le public pour protéger sa sphère privée ;
 \item défendre les droits numériques actuels, et les renforcer ;
 \end{itemize}
+\end{enumerate}
 
-Les activités de l’Association doivent être conformes au droit applicable.
-
-\chapter*{Ressources}
+\section*{Ressources}
 \addcontentsline{toc}{chapter}{Ressources}
 
-\section*{Article 4}
-Les ressources de l’Association proviennent au besoin :
+\subsection*{Article 4}
+\begin{enumerate}
+\item Les ressources de l’Association proviennent au besoin :
 \begin{itemize}
 \item de dons et legs ;
 \item du parrainage ;
@@ -91,96 +103,121 @@ Les ressources de l’Association proviennent au besoin :
 \item de toute autre ressource autorisée par la loi ;
 \end{itemize}
 
-Les comptes sont publiés après acceptation par l’Assemblée Générale. L’origine des revenus sera nominativement indiquée.
+\item Les comptes sont publiés après acceptation par l’Assemblée Générale. L’origine des revenus sera nominativement indiquée.
+\end{enumerate}
 
-\chapter*{Membres}
+
+\section*{Membres}
 \addcontentsline{toc}{chapter}{Members}
 
-\section*{Article 5}
-Peut être membre toute personne ou organisme intéressé/e par les buts de l’Association.
+\subsection*{Article 5}
+\begin{enumerate}
+\item Peut être membre toute personne physique ou morale intéressée par les buts de l’Association.
+\end{enumerate}
 
-\section*{Article 6}
-L’Association est composée de :
+\subsection*{Article 6}
+\begin{enumerate}
+\item Les membres se divisent en trois catégories :
 \begin{itemize}
 \item Membres Fondateurs ;
 \item Membres Actifs ;
 \item Membres de Soutien ;
 \end{itemize}
 
-La cotisation des Membres Fondateurs est fixée par l’Assemblée Générale.
+\item La cotisation des Membres Fondateurs est fixée par l’Assemblée Générale.
 
-Les Membres Actifs participent à la vie de l’Association par leur implication dans les différents buts définis à l’Article 3. La cotisation est fixée par l’Assemblée Générale.
+\item Les Membres Actifs participent à la vie de l’Association par leur implication dans les différents buts définis à l’Article 3. La cotisation est fixée par l’Assemblée Générale.
 
-La cotisation des Membres de Soutien est fixée par l’Assemblée Générale. Ils ne peuvent représenter l’Association dans des événements.
+\item La cotisation des Membres de Soutien est fixée par l’Assemblée Générale.
+\end{enumerate}
 
 
-\section*{Article 7}
-Les demandes d’admission sont adressées au Comité. Le Comité admet ou refuse les nouveaux membres et en informe l’Assemblée Générale.
+\subsection*{Article 7}
+\begin{enumerate}
+\item Les demandes d’admission sont adressées au Comité. Le Comité admet ou refuse les nouveaux membres et en informe l’Assemblée Générale.
+\end{enumerate}
 
-\section*{Article 8}
-La qualité de membre se perd :
+\subsection*{Article 8}
+\begin{enumerate}
+\item La qualité de membre se perd :
 \begin{itemize}
-\item par la démission. Dans tous les cas la cotisation de la période en cours reste due ;
+\item par la démission ;
 \item par l’exclusion pour de justes motifs à la majorité du comité ;
 \item par décès ;
 \item par défaut de paiement des cotisations pendant plus d'une année ;
 \end{itemize}
 
-Un Membre Fondateur ne peut être exclu qu’à la majorité des Membres Fondateurs actifs dans l’Association.
+\item Hormis dans ce dernier cas, la cotisation de la période en cours reste due.
 
-\section*{Article 9}
-Le patrimoine de l'Association répond seul aux engagements contractés en son nom. Toute responsabilité personnelle de ses membres est exclue.
+\item Un Membre Fondateur ne peut être exclu qu’à la majorité des Membres Fondateurs actifs dans l’Association.
+\end{enumerate}
 
-\chapter*{Organes}
+\subsection*{Article 9}
+\begin{enumerate}
+\item Le patrimoine de l'Association répond seul aux engagements contractés en son nom. Toute responsabilité personnelle de ses membres est exclue.
+\end{enumerate}
+
+\section*{Organes}
 \addcontentsline{toc}{chapter}{Organes}
 
-\section*{Article 10}
-Les organes de l’Association sont :
+\subsection*{Article 10}
+\begin{enumerate}
+\item Les organes de l’Association sont :
 \begin{itemize}
 \item L’Assemblée Générale.
 \item Le Comité.
-\item Les Membres Fondateurs.
 \item L’organe de contrôle des comptes.
 \end{itemize}
 
-Tant qu’un Membre Fondateur est actif dans l’Association, au moins un Membre Fondateur doit être au Comité.
+\item Tant qu’un Membre Fondateur est actif dans l’Association, au moins un Membre Fondateur doit être au Comité.
+\end{enumerate}
 
-\chapter*{Assemblée Générale}
+\section*{Assemblée Générale}
 \addcontentsline{toc}{chapter}{Assemblée Générale}
 
-\section*{Article 11}
-L’Assemblée Générale est le pouvoir suprême de l’Association. Elle est composée de tous les membres.
+\subsection*{Article 11}
+\begin{enumerate}
+\item L’Assemblée Générale est le pouvoir suprême de l’Association. Elle est composée de tous les membres.
 
-Elle se réunit une fois par an en session ordinaire. Elle peut, en outre, se réunir en session extraordinaire chaque fois que nécessaire à la demande du Comité, des Membres Fondateurs ou d’un cinquième des membres.
+\item Elle se réunit une fois par an en session ordinaire. Elle peut, en outre, se réunir en session extraordinaire chaque fois que nécessaire à la demandedemande de la majorité du Comité ou des Membres Fondateurs ou d’un cinquième des membres actifs.
 
-L’Assemblée Générale est valablement constituée quel que soit le nombre de membres présents.
+\item L’Assemblée Générale est valablement constituée quel que soit le nombre de membres présents.
 
-Le Comité communique aux membres par écrit la date de l'Assemblée générale au moins 3 semaines à l'avance. La convocation mentionnant l'ordre du jour est adressée par le Comité à chaque membre au moins 10 jours à l'avance.
+\item Le Comité communique aux membres par écrit la date de l'Assemblée générale au moins 3 semaines à l'avance. La convocation mentionnant l'ordre du jour est adressée par le Comité à chaque membre au moins 10 jours à l'avance.
+\end{enumerate}
 
-\section*{Article 12}
-L’Assemblée Générale :
+\subsection*{Article 12}
+\begin{enumerate}
+\item L’Assemblée Générale :
 \begin{itemize}
 \item élit les membres du Comité et désigne au moins un/e Président/e, un/e Secrétaire et un/e Trésorier/ère ;
 \item prend connaissance des rapports et des comptes de l’exercice et vote leur approbation ;
-item approuve le budget annuel ;
+\item approuve le budget annuel ;
 \item fixe le montant des cotisations annuelles ;
 \item prend position sur les autres sujets portés à l’ordre du jour ;
 \item adopte et modifie les statuts ;
 \end{itemize}
+\end{enumerate}
 
-\section*{Article 13}
-Les décisions de l’Assemblée Générale sont prises à la majorité simple des membres actifs présents. En cas d’égalité des voix, celle du président est prépondérante.
+\subsection*{Article 13}
+\begin{enumerate}
+\item Les décisions de l’Assemblée Générale sont prises à la majorité simple des membres présents. En cas d’égalité des voix, celle du président est prépondérante.
 Les votations ont lieu à main levée. À la demande d’au moins cinq membres, elles auront lieu à bulletin secret.
 
-Il n’y a pas de vote par procuration.
+\item Le vote par procuration n'est pas autorisé.
 
-Les Membres de Soutien n’ont pas le droit de vote, et seuls les Membres Actifs à jour de cotisation peuvent voter.
+\item Les Membres de Soutien n’ont pas le droit de vote, et seuls les Membres Actifs à jour de cotisation peuvent voter.
+\end{enumerate}
 
-\section*{Article 14}
-L’Assemblée Générale est présidée par le président ou un membre du Comité.
+\subsection*{Article 14}
+\begin{enumerate}
+\item L’Assemblée Générale est présidée par le président ou un membre du Comité.
+\end{enumerate}
 
-\section*{Article 15}
-L’ordre du jour de l’Assemblée Générale annuelle, dite "ordinaire", comprend nécessairement :
+
+\subsection*{Article 15}
+\begin{enumerate}
+\item L’ordre du jour de l’Assemblée Générale annuelle, dite "ordinaire", comprend nécessairement :
 \begin{itemize}
 \item l’approbation du procès-verbal de l’assemblée précédente ;
 \item le rapport du Comité sur l’activité de l’Association durant la période écoulée ;
@@ -191,54 +228,76 @@ L’ordre du jour de l’Assemblée Générale annuelle, dite "ordinaire", compr
 \item l’élection des membres du Comité et de l’organe de contrôle des comptes ;
 \item les propositions individuelles ;
 \end{itemize}
+\end{enumerate}
 
-\chapter*{Comité}
+\section*{Comité}
 \addcontentsline{toc}{chapter}{Comité}
 
-\section*{Article 16}
-Le Comité est autorisé à faire tous les actes qui se rapportent au but de l'association. Il a les pouvoirs les plus étendus pour la gestion des affaires courantes.
+\subsection*{Article 16}
+\begin{enumerate}
+%Le Comité est autorisé à faire tous les actes qui se rapportent au but de l'association. Il a les pouvoirs les plus étendus pour la gestion des affaires courantes.
+\item Le Comité est compétent pour prendre toutes les décisions qui ne sont pas attribuées à un autre organe par les statuts.
+\end{enumerate}
 
-\section*{Article 17}
-Le Comité se compose au minimum de 3 membres élus par l’Assemblée Générale.
+\subsection*{Article 17}
+\begin{enumerate}
+\item Le Comité se compose au minimum de 3 personnes élues par l’Assemblée Générale et choisies parmi les membres actifs.
 
-La durée du mandat est de deux ans, renouvelable quatre fois. Les Membres Fondateurs n’ont pas de limite de mandat.
+\item La durée du mandat est de deux ans, renouvelable quatre fois. Les Membres Fondateurs n’ont pas de limite de mandat.
 
-Il se réunit autant de fois que les affaires de l'association l'exigent.
+\item Il se réunit autant de fois que les affaires de l'association l'exigent.
+\end{enumerate}
 
-\section*{Article 18}
-Les membres du comité agissent bénévolement et ne peuvent prétendre qu'à l'indemnisation de leurs frais effectifs et de leurs frais de déplacement.
+\subsection*{Article 18}
+\begin{enumerate}
+\item Les membres du comité agissent bénévolement.
 
-Les indemnisations sont régulées par le règlement interne de l’Association.
+\item Les éventuelles indemnisations sont régulées par le règlement interne du Comité.
+\end{enumerate}
 
-\section*{Article 19}
-Le Comité est chargé :
+\subsection*{Article 19}
+\begin{enumerate}
+\item Le Comité est chargé :
 \begin{itemize}
 \item de prendre les mesures utiles pour atteindre les objectifs visés ; 
 \item de convoquer les assemblées générales ordinaires et extraordinaires ; 
 \item de prendre les décisions relatives à l’admission et à la démission des membres ainsi qu’à leur exclusion éventuelle ; 
 \item de veiller à l’application des statuts, de rédiger les règlements et d’administrer les biens de l’Association ; 
 \item de s'assurer de la bonne marche des moyens de communication de l'association ; 
-\item de rédiger le règlement interne ;
 \end{itemize}
+\end{enumerate}
 
-\section*{Article 20}
-L’Association est valablement engagée par la signature collective de deux membres du Comité, dont le président.
+\subsection*{Article 20}
+\begin{enumerate}
+\item L’Association est valablement engagée par la signature collective de deux membres du Comité, dont le président.
 
-Si ce dernier n'est pas disponible rapidement et qu'il y a urgence, deux autres membres du Comité peuvent signer ensemble, à charge pour eux d'informer le président dès que possible. 
+\item Si ce dernier n'est pas disponible rapidement et qu'il y a péril en la demeure, deux autres membres du Comité peuvent signer ensemble, à charge pour eux d'informer le président dès que possible.
+\end{enumerate}
 
-\chapter*{Dispositions diverses}
+\subsection*{Article 21}
+\begin{enumerate}
+\item Seuls le président, le secrétaire et la personne chargée des relations publiques sont habilités à représenter l'Association auprès du public et des médias.
+\end{enumerate}
+
+\section*{Dispositions diverses}
 \addcontentsline{toc}{chapter}{Dispositions diverses}
 
-\section*{Article 21}
-L'exercice comptable commence le 1er janvier et se termine le 31 décembre de chaque année.
-La gestion des comptes est confiée au trésorier de l'association et contrôlée chaque année par le(s) vérificateur(s) nommé(s) par l'Assemblée Générale.
+\subsection*{Article 22}
+\begin{enumerate}
+\item L'exercice comptable commence le 1er janvier et se termine le 31 décembre de chaque année.
 
-\section*{Article 22}
-En cas de dissolution de l'association, l'actif disponible sera entièrement attribué à une institution poursuivant un but d'intérêt public analogue à celui de l'association et bénéficiant de l’exonération de l’impôt.
+\item La gestion des comptes est confiée au trésorier de l'association et contrôlée chaque année par le(s) vérificateur(s) nommé(s) par l'Assemblée Générale.
+\end{enumerate}
 
-En aucun cas, les biens ne pourront retourner aux fondateurs physiques ou aux membres, ni être utilisés à leur profit en tout ou partie et de quelque manière que ce soit.
+\subsection*{Article 23}
+\begin{enumerate}
+\item En cas de dissolution de l'association, l'actif disponible sera entièrement attribué à une institution poursuivant un but d'intérêt public analogue à celui de l'association et bénéficiant de l’exonération de l’impôt.
 
-\chapter*{Entrée en vigueur}
+\item En aucun cas, les biens ne pourront retourner aux fondateurs ou aux membres, ni être utilisés à leur profit en tout ou partie et de quelque manière que ce soit.
+\end{enumerate}
+
+
+\section*{Entrée en vigueur}
 \addcontentsline{toc}{chapter}{Entrée en vigueur}
 Ces statuts ont été acceptés lors de l’Assemblée Générale du \underline{\hspace{3cm}} et entrent en vigueur immédiatement.
 
