@@ -1,5 +1,6 @@
 Documents de l'Association EthACK.org
 =====================================
 
-En cours de création — ces documents sont encore des brouillons et nécessitent
-quelques retouches.
+Statuts et réglements de l'association.
+
+Les PV des différentes séances seront aussi publiés ici.
