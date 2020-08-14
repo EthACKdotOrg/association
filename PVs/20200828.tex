@@ -1,0 +1,82 @@
+\documentclass[12pt,twoside]{report}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+ \fancypagestyle{plain}{%
+ \fancyhf{}%
+ \fancyfoot[L]{The Swiss Privacy Basecamp}
+ \fancyfoot[C]{\thepage/\pageref*{LastPage}}%
+ \fancyfoot[R]{EthACK.org — Séance du 14.08.2020}%
+ \renewcommand{\headrulewidth}{0pt}%
+ \renewcommand{\footrulewidth}{0pt}%
+ }
+
+\author{EthACK.org — The Swiss Privacy Basecamp}
+\title{Assemblée Générale Extraordinaire}
+{
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue
+}
+\begin{document}
+\begin{titlepage}
+\centering
+\includegraphics[width=0.50\textwidth]{../logo-4096.png}\par\vspace{2cm}
+{\scshape\LARGE EthACK.org \par}
+\vspace{1cm}
+{\scshape\Large The Swiss Privacy Basecamp \par}
+\vspace{1.5cm}
+{\huge\bfseries Assemblée Générale\par}
+
+\vfill
+{\large \today\par}
+\end{titlepage}
+\setlength{\parindent}{0cm}
+
+\subsection*{Ouverture}
+La scéance s'est faite par mails, au vu de la situation COVID-19 actuelle.
+
+
+\subsection*{Membres présents}
+\begin{itemize}
+\item Cédric Jeanneret - Président
+\item Cédric Urech - Trésorier
+\item Christèle Jeanneret
+\item Diego Abelenda
+\item François Charlet
+\item Yves Bertino
+\end{itemize}
+
+\subsection*{Dissolution de l'Association}
+
+L'Assemblée accepte la dissolution de l'Association, au vu du
+manque d'activités sur les dernières années.
+
+Le montant actuellement sur le compte de l'association sera réparti
+à parts égales entre deux autres associations:
+\begin{itemize}
+\item Fixme Hackerspace
+\item SwissNeutralNet
+\end{itemize}
+
+Cela correspond à l'article 23, alinéa 1 des Statuts de l'Association.
+
+Le Trésorier et le Président se chargeront de procéder à la clôture bancaire,
+et transmettront le bilan final aux membres pour contrôle.
+
+\end{document}
